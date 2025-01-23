@@ -18,7 +18,7 @@ const Expense=mongoose.model("Expense",expenseSchema)
 // app.use(express.json()); //middlevar
 
 
-app.get("/api/expenses/:id",async (req, res) => {
+app.get("/api/expenses/",async (req, res) => {
     const {id}=req.params;
     try{
         console.log(id)
